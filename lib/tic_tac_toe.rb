@@ -130,7 +130,8 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.select do |val|
+  turns_taken = board.select do |val|
     val == "X" || val == "O"
   end
+  return turns_taken.length
 end
