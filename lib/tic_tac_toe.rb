@@ -145,7 +145,6 @@ def current_player(board)
 end
 
 def play(board)
-  input = gets
   while over?(board) == false do
     turn(board)
   end
