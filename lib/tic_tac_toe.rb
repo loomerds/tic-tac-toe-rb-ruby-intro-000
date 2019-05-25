@@ -121,7 +121,7 @@ def turn(board)
   puts "Please enter 1-9:"
   inputOK = input_to_index(gets.strip)
   if valid_move?(board, inputOK)
-    move(board, inputOK)
+    move(board, inputOK, current_player(board))
     display_board(board)
   else
     turn(board)
@@ -134,4 +134,8 @@ def turn_count(board)
     val == "X" || val == "O"
   end
   return turns_taken.length
+end
+
+def current_player(board)
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
