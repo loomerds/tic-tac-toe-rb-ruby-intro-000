@@ -126,7 +126,7 @@ def turn(board)
     move(board, inputOK, current_player(board))
     display_board(board)
   else
-    if over? == false
+    if over?(board) == false
       turn(board)
     end
   end
