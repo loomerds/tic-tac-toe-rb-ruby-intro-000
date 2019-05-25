@@ -117,7 +117,7 @@ def input_to_index(square_num)
   square_num.to_i - 1
 end
 
-def move(board, index, character = "X")
+def move(board, index, character)
   board[index] = character
 end
 
