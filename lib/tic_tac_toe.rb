@@ -141,7 +141,7 @@ def current_player(board)
 end
 
 def play(board)
-  until over?
+  until over? do
     turn(board)
   end
   if won?(board)
