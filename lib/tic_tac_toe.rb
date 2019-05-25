@@ -107,7 +107,6 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-
 # code your input_to_index and move method here!
 
 def input_to_index(square_num)
