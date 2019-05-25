@@ -141,5 +141,12 @@ def current_player(board)
 end
 
 def play(board)
-
+  until over?
+    turn(board)
+  end
+  if won?(board)
+    puts `Congratulations #{winner(board)}`
+  else
+    puts `The game was a draw.`
+  end
 end
