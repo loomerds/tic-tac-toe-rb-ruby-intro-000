@@ -128,3 +128,9 @@ def turn(board)
   end
 
 end
+
+def turn_count(board)
+  board.select do |val|
+    val == "X" || val == "O"
+  end
+end
